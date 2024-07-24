@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protected Page</title>
+</head>
+<body>
+    <h1>Authentication Required</h1>
+    <input type="password" id="password" placeholder="Enter password">
+    <button id="login">Login</button>
+
+    <script>
+        document.getElementById('login').addEventListener('click', function () {
+            var enteredPassword = document.getElementById('password').value;
+            var correctPassword = "%hackersguide2024%";
+
+            if (enteredPassword === correctPassword) {
+                window.location.href = 'https://drive.google.com/uc?export=view&id=1v43r8t6QMVa-OZpvAilGt9UG5J-QDlTZ';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
